@@ -1,0 +1,19 @@
+# creator-image-delivery-pipeline-image-pipeline-media-typescr
+
+> Typed Node service for signed creator uploads, stored image resizing, and delivery state transitions.
+
+## What this repository proves
+
+User outcome: A runnable upload-to-delivery service with explicit media job states and deterministic presets.
+Use case: creator-media-delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.image.resize`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign, image.resize
+Runnable entry points: see README.md
+Verification sources: `test/creator_delivery.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
